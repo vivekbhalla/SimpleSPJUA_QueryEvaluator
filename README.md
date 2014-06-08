@@ -34,7 +34,6 @@ Example invocation
     2|6
 
 Testing done on - TPC-H
-
 TPC-H is an industry standard benchmark for relational decision support queries. The
 benchmark specification is available from [here](http://www.tpc.org/tpch/)
 
