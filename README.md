@@ -13,26 +13,25 @@ output in a standardized form.
 
 Parser
 A parser converts a human-readable string into a structured representation of the program (or query)
-that the string describes. An open-source SQL parser ([JSQLParser](http://jsqlparser.sourceforge.net)
+that the string describes. An open-source SQL parser ([JSQLParser](http://jsqlparser.sourceforge.net))
 is being used for this project. Documentation on how to use this parser is available at the above link.
 
 Example invocation
 
-  $> ls data
-  R.dat
-  S.dat
-  T.dat
-  $> cat R.dat
-  1|1|5
-  1|2|6
-  2|3|7
-  $> cat query.sql
-  CREATE TABLE R(A int, B int)
-  SELECT B, C FROM R WHERE A = 1
-  $> java -cp build:jsqlparser.jar edu.buffalo.cse562.Main --data data query.sql
-  1|5
-  2|6
-
+    $> ls data
+    R.dat
+    S.dat
+    T.dat
+    $> cat R.dat
+    1|1|5
+    1|2|6
+    2|3|7
+    $> cat query.sql
+    CREATE TABLE R(A int, B int)
+    SELECT B, C FROM R WHERE A = 1
+    $> java -cp build:jsqlparser.jar edu.buffalo.cse562.Main --data data query.sql
+    1|5
+    2|6
 
 Testing done on - TPC-H
 
